@@ -5,7 +5,8 @@ const mongoose = require("mongoose");
 const colors = require('colors');
 const bot = require('@bot/index');
 const App = require('@structures/app.js');
-const { PORT, DISCORD_TOKEN, MONGO_DB_URL } = process.env;
+const { PORT, DISCORD_TOKEN, MONGO_DB_URL } = process.env; 
+
 
 
 
