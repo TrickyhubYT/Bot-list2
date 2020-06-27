@@ -5,13 +5,11 @@ const mongoose = require("mongoose");
 const colors = require('colors');
 const bot = require('@bot/index');
 const App = require('@structures/app.js');
-const { PORT, DISCORD_TOKEN, MONGO_DB_URL } = process.env; 
-
-
+const { PORT, DISCORD_TOKEN, MONGO_DB_URL } = process.env;
 
 
 (async () => {
-    await mongoose.connect(`mongodb+srv://Botlist:Botlist@botlist-uk4y4.gcp.mongodb.net/test`, {
+    await mongoose.connect(`${MONGO_DB_URL}`, {
       useCreateIndex: true,
       useNewUrlParser: true,
       useUnifiedTopology: true
