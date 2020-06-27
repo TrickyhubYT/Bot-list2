@@ -8,8 +8,9 @@ const App = require('@structures/app.js');
 const { PORT, DISCORD_TOKEN, MONGO_DB_URL } = process.env;
 
 
+
 (async () => {
-    await mongoose.connect(`${MONGO_DB_URL}`, {
+    await mongoose.connect(`mongodb+srv://Botlist:Botlist@botlist-uk4y4.gcp.mongodb.net/test`, {
       useCreateIndex: true,
       useNewUrlParser: true,
       useUnifiedTopology: true
