@@ -30,7 +30,7 @@ route.post("/", async (req, res, next) => {
 
     let result = await getUser({access_token, refresh_token});
     if (!result) return res.redirect("/login");
-    [user, {refresh_token, access_token}] = result;
+    [user, {refresh_token, access_token}] = result; 
     res.cookie("refresh_token", refresh_token, {httpOnly: true});
     res.cookie("access_token", access_token, {httpOnly: true});
     
@@ -58,7 +58,7 @@ route.post("/", async (req, res, next) => {
         owners: owners
     }).save()
     try {
-        let r = req.app.get('client').guilds.cache.get(GUILD_ID).roles.cache.find(r => r.id === '726499150933524591');
+        let r = req.app.get('client').guilds.cache.get('706409059078766632').roles.cache.find(r => r.id === '726499150933524591');
         await r.setMentionable(true)
         await req.app.get('client').channels.cache.find(c => c.id === '726499300409868317').send(`<@${owners[0]}> added <@${bot.id}>: ${r}`);
         r.setMentionable(false);
