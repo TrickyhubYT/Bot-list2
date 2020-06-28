@@ -12,6 +12,7 @@ dependencies:
   is-url: 1.2.4
   klasa: 0.5.0
   module-alias: 2.2.2
+  mongodb: 3.5.9
   mongoose: 5.9.20
   node-fetch: 2.6.0
   node-pre-gyp: 0.14.0
@@ -1749,6 +1750,7 @@ packages:
     peerDependencies:
       canvas: '*'
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/kyranet/CanvasConstructor/tar.gz/5f500c985e76880421f0aa4942cbdfbbaf733677'
     version: 3.2.0
 registry: 'https://registry.npmjs.org/'
@@ -1768,6 +1770,7 @@ specifiers:
   is-url: 1.2.4
   klasa: ^0.5.0
   module-alias: ^2.2.2
+  mongodb: ^3.5.9
   mongoose: ^5.9.10
   node-fetch: ^2.6.0
   node-pre-gyp: ^0.14.0
